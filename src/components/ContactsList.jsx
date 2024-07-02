@@ -30,7 +30,7 @@ const ContactsList = () => {
 
     const handleDelete = async (id) => {
         try {
-          await axios.delete(`http://localhost:5000/${id}`);
+          await axios.delete(`https://ps-backend-d5jt.onrender.com//${id}`);
           setStatusMessage('Contact deleted successfully!');
           fetchContacts(); // Fetch updated contacts
         } catch (error) {
